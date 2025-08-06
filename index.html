@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content=" MedBLINK: Probing Visual Perception and Trustworthiness in Multimodal Language Models for Medicine">
+        content="MedBLINK: Probing Basic Perception in Multimodal Language Models for Medicine">
   <meta name="keywords" content="MLM, MLLM, LLM, Medical, Benchmark">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MedBLINK</title>
@@ -88,7 +88,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title"> MedBLINK: Probing the Fundamental Medical Imaging Knowledge of Multimodal Language Models</h1>
+          <h1 class="title is-1 publication-title"> MedBLINK: Probing Basic Perception in Multimodal Language Models for Medicine</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://mahtabbigverdi.github.io">Mahtab Bigverdi*</a><sup>1</sup>,</span>
@@ -124,7 +124,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://arxiv.org/pdf/2508.02951"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -133,7 +133,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href=""
+                <a href="https://arxiv.org/abs/2508.02951"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -202,11 +202,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            While recent advances in Multimodal Language Models (MLMs) have enabled progress in medical image understanding, these models often struggle with tasks that require basic perceptual knowledge skills that medical students are expected to master early in their training. 
+            Multimodal language models (MLMs) show promise for clinical decision support and diagnostic reasoning, raising the prospect of end-to-end automated medical image interpretation. However, clinicians are highly selective in adopting AI tools; a model that makes errors on seemingly simple perception tasks such as determining image orientation or identifying whether a CT scan is contrast-enhanced—are unlikely to be adopted for clinical tasks. We introduce MedBLINK, a benchmark designed to probe these models for such perceptual abilities. MedBLINK spans eight clinically meaningful tasks across multiple imaging modalities and anatomical regions, totaling 1,429 multiple-choice questions over 1,605 images.
 
           </p>
           <p>
-            To investigate this gap, we introduce <b>MedBLINK</b>, a benchmark designed to evaluate MLMs on fundamental visual tasks in medical imaging. These tasks, inspired by the concept of “Blink” decisions, are easy for trained humans but remain challenging for current models. <b>MedBLINK</b> includes eight tasks across various imaging modalities and organ systems, each validated by radiologists to reflect clinically relevant yet simple visual questions. We find that even the best MLMs fall short of human performance by an average margin of 31.4%, revealing persistent weaknesses in their visual grounding. Our results suggest that advancing medical AI requires more attention to foundational knowledge—mirroring how doctors build expertise from the ground up.
+            We evaluate 19 state-of-the-art MLMs, including general-purpose (GPT‑4o, Claude 3.5 Sonnet) and domain-specific (Med-Flamingo, LLaVA-Med, RadFM) models. While human annotators achieve 96.4% accuracy, the best-performing model reaches only 65%. These results show that current MLMs frequently fail at routine perceptual checks, suggesting the need to strengthen their visual grounding to support clinical adoption. 
           </p>
          
         </div>
@@ -284,7 +284,14 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>
-
+      @misc{bigverdi2025medblinkprobingbasicperception,
+        title={MedBLINK: Probing Basic Perception in Multimodal Language Models for Medicine}, 
+        author={Mahtab Bigverdi and Wisdom Ikezogwo and Kevin Zhang and Hyewon Jeong and Mingyu Lu and Sungjae Cho and Linda Shapiro and Ranjay Krishna},
+        year={2025},
+        eprint={2508.02951},
+        archivePrefix={arXiv},
+        primaryClass={cs.AI},
+        url={https://arxiv.org/abs/2508.02951},}
 </code></pre>
   </div>
 </section>
